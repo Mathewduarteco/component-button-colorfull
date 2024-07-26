@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+html, body {
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--body-bg);
+    font-family: "DM Sans", sans-serif;
+}
+
+:root {
+    --font-family: 'DM Sans', sans-serif;
+    --body-bg: #1E1F25;
+    --btn-bg: #000;
+    --btn-color: #cbcbcb;
+    --btn-color-hover: #fff;
+    --grad-color1: #eeaf61;
+    --grad-color2: #13e27a;
+    --grad-color3: #4b48e6;
+    --grad-color4: #ce4966;
+    --grad-color5: #6a0d83;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-border {
+    background: linear-gradient(#eeaf61, #13e27a, #4b48e6, #ce4966, #6a0d83);
+    padding: 2px;
+}
+
+.button {
+    border: none;
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    padding: 2em 4.5em;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: .1em;
+}
+
+.button-border:hover {
+    background: linear-gradient(#eeaf61, #13e27a, #4b48e6, #ce4966, #6a0d83);
+}
+
+.button-border:hover .button {
+    color: var(--btn-color-hover);
+    padding: 1.1em 1.6em;
+}
